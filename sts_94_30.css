@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('spidermanbg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+    background-color: #0b1d3a;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    border: 4px solid #e11d48;
+}
+
+.judul-utama {
+    text-align: center;
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+    margin-bottom: 5px;
+}
+
+.judul-utama:hover {
+    transform: rotate(-2deg) scale(1.08);
+    text-shadow: 0 0 18px #ff0000;
+}
+
+.sub-judul {
+    text-align: center;
+    color: #38bdf8;
+    font-size: 15px;
+    margin-bottom: 35px;
+    font-weight: bold;
+}
+
+p {
+    text-align: justify;
+    text-indent: 40px;
+    line-height: 1.8;
+    color: #ffffff;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.galeri-gambar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.card-gambar {
+    position: relative;
+    width: 170px;
+    background: none;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card-gambar img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card-india:hover img {
+    transform: rotate(4deg) scale(1.08);
+    filter: drop-shadow(0 0 12px #eab308);
+}
+
+.card-miles:hover img {
+    transform: rotate(-4deg) scale(1.08);
+    filter: drop-shadow(0 0 12px #ff0000);
+}
+
+.card-gwen:hover img {
+    transform: rotate(4deg) scale(1.08);
+    filter: drop-shadow(0 0 12px #ff1493);
+}
+
+.card-hobie:hover img {
+    transform: rotate(-4deg) scale(1.08);
+    filter: drop-shadow(0 0 12px #a855f7);
+}
+
+.speech-bubble {
+    position: absolute;
+    top: -55px;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+    width: 150px;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: bold;
+    border: 2px solid #000000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.card-india:hover .speech-bubble {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) scale(1);
+    box-shadow: 0 0 15px #eab308;
+    border-color: #eab308;
+}
+
+.card-miles:hover .speech-bubble {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) scale(1);
+    box-shadow: 0 0 15px #ff0000;
+    border-color: #ff0000;
+}
+
+.card-gwen:hover .speech-bubble {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) scale(1);
+    box-shadow: 0 0 15px #ff1493;
+    border-color: #ff1493;
+}
+
+.card-hobie:hover .speech-bubble {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) scale(1);
+    box-shadow: 0 0 15px #a855f7;
+    border-color: #a855f7;
+}
+
+.caption {
+    text-align: center !important;
+    text-indent: 0 !important;
+    font-weight: bold;
+    color: #ffffff !important;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 13px;
+}

@@ -1,0 +1,205 @@
+body{
+    background-image: url("bgg.jpg") ;
+    background-size: cover;
+    background-position: center;
+}
+h2{
+    background-color: rgb(186, 186, 185);
+    color: black;
+    text-align: center;
+}
+h1{
+    background-color: rgb(71, 65, 61);
+    color: rgb(241, 237, 237);
+    text-align: center;
+}
+
+div.content{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7%;
+    margin: 30px auto;
+width: 70%;
+background-color: rgba(126, 116, 116, 0.353);
+color: rgb(0, 0, 0);
+padding: 30px;
+border-radius: 12px;
+}
+div.foto{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(247, 6, 6);
+}
+div.foto img{
+    position: absolute;
+    width : 100%;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1.1);
+}
+.foto img.bottom{
+    opacity: 1;
+    z-index: 2;
+}
+.foto:hover img.top{
+    opacity: 0 ;
+    transform: scale(1.1);
+}
+.foto img.bottom {
+    opacity: 0; /* nilai diturunkan menjadi 0*/
+    z-index: 1; /* nilai diturunkan menjadi 1 */
+}
+
+.foto:hover img.bottom {
+    opacity: 1; /* nilai dinaikkan menjadi 1*/
+    transform: scale(1.1);
+}
+
+div.makanan,.artist{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    text-align: center;
+}
+
+img {
+    padding: 10px;
+}
+
+.foodtxt{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    
+}
+.food{
+    width: 235px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(96, 56, 56, 0.985);
+    margin-bottom: 25px;
+    background-color: cornsilk;
+}
+.cool {
+    width: 235px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(96, 56, 56, 0.985);
+    margin-bottom: 25px;
+    background-color: cornsilk;
+
+}
+.food:hover {
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+.cool:hover {
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+.food p{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+.cool p{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+.food img{
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+}
+.cool img{
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+}
+div.celebrity {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+div.brunomars,
+div.stephcurry,
+div.derrickrose {
+
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(96, 56, 56, 0.985);
+    margin-bottom: 25px;
+    background-color: cornsilk;
+
+    transition: transform 0.3s ease;
+}
+
+div.brunomars:hover,
+div.stephcurry:hover,
+div.derrickrose:hover {
+
+    transform: scale(1.1);
+}
+
+div.celebrity img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+div.minuman {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+div.airputih,
+div.estehmanis,
+div.jasminemilktea {
+
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(96, 56, 56, 0.985);
+    margin-bottom: 25px;
+    background-color: cornsilk;
+
+    transition: transform 0.3s ease;
+}
+
+div.airputih:hover,
+div.estehmanis:hover,
+div.jasminemilktea:hover {
+
+    transform: scale(1.1);
+}
+
+div.minuman img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
